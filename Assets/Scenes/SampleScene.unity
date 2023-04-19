@@ -1542,13 +1542,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 3
   m_FollowOffset: {x: 0, y: 2.34, z: -2.21}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_AngularDampingMode: 0
-  m_PitchDamping: 0.72
-  m_YawDamping: 1.29
-  m_RollDamping: 0.65
+  m_PitchDamping: 0
+  m_YawDamping: 0
+  m_RollDamping: 0
   m_AngularDamping: 0
 --- !u!114 &980439231
 MonoBehaviour:
@@ -1690,7 +1690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1003271219}
-  - component: {fileID: 1003271218}
+  - component: {fileID: 1003271220}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1698,22 +1698,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1003271218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003271217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c33fdc579b86c43a7267a1a0f8b3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movementSpeed: 15
-  _rotationSpeedVertical: 250
-  _rotationSpeedHorizontal: 92.85
-  _axesRotation: 1
 --- !u!4 &1003271219
 Transform:
   m_ObjectHideFlags: 0
@@ -1730,6 +1714,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1003271220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003271217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c33fdc579b86c43a7267a1a0f8b3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movementSpeed: 40
+  _rotationSpeedVertical: 10
+  _rotationSpeedHorizontal: 60
+  _axesRotation: 1
 --- !u!1 &1168427031
 GameObject:
   m_ObjectHideFlags: 0
