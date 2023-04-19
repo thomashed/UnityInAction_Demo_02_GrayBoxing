@@ -6,5 +6,5 @@ using UnityEngine;
 [Serializable]
 public class BaseModel
 {
-    
+    public string TestPropFromParent = "HiHi";
 }

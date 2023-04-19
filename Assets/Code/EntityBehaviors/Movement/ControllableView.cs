@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace UnityDemo.EntityBehaviors
 {
-    public class ControllableView: BaseView<BaseController, BaseModel>
+    public class ControllableView: BaseView<ControllableModel, ControllableController>
     {
         [SerializeField] private float _movementSpeed = 40f;
         [FormerlySerializedAs("_rotationSpeed")] [SerializeField] private float _rotationSpeedVertical = 10f;
@@ -42,6 +42,7 @@ namespace UnityDemo.EntityBehaviors
         protected override void Awake()
         {
             base.Awake();
+            
         }
 
         private void Update()
@@ -92,12 +93,16 @@ namespace UnityDemo.EntityBehaviors
 
     }
 
-    public class ControllableController : BaseController
+    public class ControllableController : BaseController<ControllableModel>
     {
+        
     }
     
+    [Serializable]
     public class ControllableModel : BaseModel
     {
+        [SerializeField]
+        private string TestPropFromInheritor = "HiHi";
     }
     
 }

@@ -4,19 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class BaseView<C, M> : MonoBehaviour
-    where C : BaseController, new()
-    where M : BaseModel, new()
+public class BaseView<M,C> : MonoBehaviour
+    where M : BaseModel 
+    where C : BaseController<M>, new()
 {
     
     protected C _controller;
-    protected M _model;
+    public M _model; // TODO: can this be protected?
 
 
     protected void Create()
     {
         _controller = new C();
-        _model = new M();
+        _controller.Setup(_model);
     }
 
     protected virtual void Awake()
