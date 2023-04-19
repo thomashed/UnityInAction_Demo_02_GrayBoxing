@@ -161,7 +161,7 @@ Transform:
   - {fileID: 1420293457}
   - {fileID: 169125152}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &169125151
 GameObject:
@@ -427,7 +427,7 @@ Transform:
   - {fileID: 905368199}
   - {fileID: 916237684}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
@@ -693,7 +693,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
@@ -1093,7 +1093,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &876451132
 GameObject:
@@ -1480,7 +1480,7 @@ Transform:
   m_Children:
   - {fileID: 980439228}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &980439227
 GameObject:
@@ -1493,6 +1493,7 @@ GameObject:
   - component: {fileID: 980439228}
   - component: {fileID: 980439229}
   - component: {fileID: 980439230}
+  - component: {fileID: 980439231}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -1539,16 +1540,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
+  m_BindingMode: 3
   m_FollowOffset: {x: 0, y: 2.34, z: -2.21}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
   m_AngularDampingMode: 0
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
+  m_PitchDamping: 0.72
+  m_YawDamping: 1.29
+  m_RollDamping: 0.65
   m_AngularDamping: 0
+--- !u!114 &980439231
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980439227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c41ac9245b87c4192012080077d830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Damping: 0
 --- !u!1 &991722863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,9 +1710,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c33fdc579b86c43a7267a1a0f8b3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 40
+  _movementSpeed: 15
   _rotationSpeedVertical: 250
-  _rotationSpeedHorizontal: 10
+  _rotationSpeedHorizontal: 92.85
   _axesRotation: 1
 --- !u!4 &1003271219
 Transform:
@@ -1714,7 +1728,7 @@ Transform:
   m_Children:
   - {fileID: 1378332270}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168427031
 GameObject:
@@ -2042,7 +2056,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1378332269
 GameObject:
