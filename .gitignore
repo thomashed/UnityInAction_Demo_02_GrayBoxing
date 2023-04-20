@@ -28,6 +28,7 @@
 
 # Ignore heavy 3rd party unitypackages and respect licenses
 /[Aa]ssets/AssetPackages/*
+/[Aa]ssets/ThirdPartyAssets/*
 
 # Visual Studio cache directory
 .vs/
